@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@400;700;900&display=swap");
+
+:root {
+  --red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --blue-d: hsl(198, 62%, 26%);
+  --cyan: hsl(167, 40%, 24%);
+  --cyan-l: #91d3c5;
+
+  --White: hsl(0, 0%, 100%);
+  --blue-g: hsl(210, 4%, 67%);
+  --blue-dg: hsl(232, 10%, 55%);
+  --blue-vdg: hsl(213, 9%, 39%);
+  --blue-vdd: hsl(212, 27%, 19%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+ul {
+  display: flex;
+}
+li {
+  margin-left: 30px;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-reversed > :first-child {
+  order: 2;
+}
+
+.brand {
+  width: 164px;
+  height: 31px;
+}
+
+/* Start Header */
+header {
+  background-image: url(/images/desktop/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1.message {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  transform: translateY(85px);
+  color: var(--White);
+}
+/* End Header */
+
+/* Start Section-A */
+section img {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+section article {
+  padding: 8.2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h-1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--blue-vdd);
+}
+
+.p-1 {
+  line-height: 1.7;
+  color: var(--blue-vdg);
+}
+
+.a-1 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--blue-vdd);
+}
+/* End Section-A */
+
+/* Start Section-C */
+.sec-c .left,
+.sec-c .right {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20rem 8rem 5rem 8rem;
+}
+
+.sec-c .left {
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+
+.sec-c .right {
+  background-image: url(/images/desktop/image-photography.jpg);
+}
+
+.sec-c .left .h-1,
+.sec-c .right .h-1 {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.sec-c .left .h-1,
+.sec-c .left .p-1 {
+  color: var(--cyan);
+}
+
+.sec-c .right .h-1,
+.sec-c .right .p-1 {
+  color: var(--blue-d);
+}
+/* End Section-C */
+
+/* Start Section-D  */
+.sec-d {
+  text-align: center;
+  padding: 5rem;
+}
+
+.sec-d h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--blue-g);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin: 3rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.card > p {
+  margin: 3rem 0;
+  line-height: 1.5;
+  color: var(--blue-vdg);
+}
+
+.card .info .name {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card .info .position {
+  color: var(--blue-g);
+  font-size: 1rem;
+}
+/* End Section-D  */
+
+/* Start Section-E */
+.sec-e {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* End Section-E */
+
+/* Start Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cyan-l);
+  padding: 4rem;
+}
+
+footer ul {
+  margin: 1.5rem 0 3rem 0;
+}
+
+footer li {
+  margin: 0 2rem;
+}
+
+footer a {
+  color: var(--cyan);
+}
+
+footer li :hover {
+  color: var(--White);
+}
+
+footer .social a {
+  margin: 0 1rem;
+}
+
+footer .social a:hover {
+  filter: brightness(0) invert(1);
+}
+/* End Footer */
